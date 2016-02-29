@@ -1,0 +1,62 @@
+/*
+ Write a Java program called StarFigures that generates the following output. Use static 
+ methods to show structure and eliminate redundancy in your solution.
+ 
+*****
+*****
+ * * 
+  *    
+ * * 
+
+*****
+*****
+ * * 
+  *    
+ * * 
+***** 
+*****
+
+  * 
+  * 
+  * 
+*****
+*****
+ * * 
+  * 
+ * *
+
+ */
+public class StarFigures 
+{
+	public static void main(String [] args)
+	{
+		printA();
+		printB();
+		System.out.println();
+		printA();
+		printB();
+		printA();
+		System.out.println();
+		printC();
+		printA();
+		printB();
+	}
+	public static void printA()
+	{
+		System.out.println("*****");
+		System.out.println("*****");
+	}
+	public static void printB()
+	{
+		System.out.println(" * * ");
+		System.out.println("  *  ");
+		System.out.println(" * * ");
+	}
+	public static void printC()
+	{
+		System.out.println("  *  ");
+		System.out.println("  *  ");
+		System.out.println("  *  ");
+	}
+}
+
