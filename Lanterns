@@ -1,0 +1,88 @@
+/*
+ Write a Java program called Lanterns that generates the following output. Use static methods to
+ show structure and eliminate redundancy in your solution.
+ 
+    *****
+  *********
+*************
+
+    *****
+  *********
+*************
+* | | | | | *
+*************
+    *****
+  *********
+*************
+
+    *****
+  *********
+*************
+    *****
+* | | | | | *
+* | | | | | *
+    *****
+    *****
+
+ */
+public class Lanterns 
+{
+   public static void main(String[] args) 
+   {
+      first();
+      second();
+      third();
+   }
+
+   public static void lines() 
+   {
+      System.out.println("* | | | | | *");
+   }
+   
+   public static void fiveStars() 
+   {
+      System.out.println("    *****");
+   }
+   
+   public static void nineStars() 
+   {
+      System.out.println("  *********");
+   }
+   
+   public static void thirteenStars() 
+   {
+      System.out.println("*************");
+   }
+   
+   public static void triangle() 
+   {
+	      fiveStars();
+	      nineStars();
+	      thirteenStars();
+   }
+   
+   public static void first()
+   {
+	   triangle();
+	   System.out.println();
+   }
+   
+   public static void second()
+   {
+	   triangle();   
+	   lines();
+	   thirteenStars();
+	   triangle();
+	   System.out.println();
+   }
+   
+   public static void third()
+   {
+	   triangle();
+	   fiveStars();
+	   lines();
+	   lines();
+	   fiveStars();
+	   fiveStars();
+   }
+}
